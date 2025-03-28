@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+a{text-decoration: none; color: black;}
+
+img {display: block;max-width: 100%;}
+
+#layout {max-width: 500px; margin: auto; border: 2px solid pink; height: 150vh; position: relative;}
+
+nav {display: flex; justify-content: space-between; padding: 10px;}
+
+nav button.material-symbols-outlined {background: none; font-size: 2rem; border: none; }
+
+#main {padding: 10px; }
+
+#hae {background:  skyblue; border-radius: 10px; height: 50vh; display: flex; align-items: center; justify-content: center; letter-spacing: -1px;}
+
+#hae + div { display: flex;}
+
+#hae + div section {flex: 1; height: 20vh; margin-top: 20px; text-align: center;}
+
+#hae + div div {background: pink; height: 80%; margin: 10px;}
+
+#kakao {position: fixed; bottom: 50px; right: 10px; width: 100px; background: none; border: none;}
+
+
+
+/**************borad.html*************/
+#board #login {position: absolute; background: white; top:0; left: 0; width: 100%; display: flex; justify-content: space-between; padding: 15px;}
+#board #login h2 {display: none;}
+#board #login span {font-size: 3rem;}
+#board #login b {font-weight: normal; display:inline-block; transform:translateY(-20px);}
+#board #login b a {text-decoration: double underline blue;}
+#board #login div:last-child button {display: block; background: none; border: none; margin:0 0 0 auto;}
+#board #custom {display: flex; justify-content: space-evenly; padding-top: 50px; margin-bottom: 15px; }
+#board #custom a {text-align: center;}
+#board #custom span {width: 100px; height: 100px; border: 2px solid #ddd; border-radius: 50%; display: block; margin-bottom: 10px;}
+
+#board #boards h2 {padding-top: 30px; padding-bottom: 10px;}
+#board #boards h2 button {float: right; background: none; border: none;}
+#board #boards ul {list-style: none; line-height: 200%; display: none; }
+#board #boards ul:first-of-type {background: red;}
+#board #boards li {border-bottom: 1px dashed #666;}
+
+
+
+/**************index.html*****************/
+#gaip {background: red;}
+
+
+/**************brand.html*****************/
+#brand #layout {overflow: hidden;}
+#brand h2 {text-align: center; border-bottom: 2px dashed burlywood; font-size: 2rem; margin-top: 15px; padding-bottom: 20px; margin-bottom: 20px;}
+#brand #scroll {overflow: auto;}
+#brand main nav {width: 110%;}
+#brand main nav a {display: inline-block; border: 1px solid gray; padding: 3px 5px;}
+#brand #pic_1, #brand #pic_2 {border: 2px solid black; padding: 40px; margin:20px 0 10px;}
+#brand ul{padding-left: 20px; }
+#brand ul li { padding-bottom: 7px;}
+
+@media(min-width:501px){
+    #brand main nav {width: 100%;}
+}
